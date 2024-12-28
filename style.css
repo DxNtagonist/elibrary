@@ -59,7 +59,7 @@ transition:0.4s;
   
 
   #showcase{
-	background-image:url('../library3.jpg');
+	background-image:url('library3.jpg');
 	background-position:center right;
 	min-height:400px;
 	margin-bottom:30px;
