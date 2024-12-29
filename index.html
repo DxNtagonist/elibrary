@@ -2,8 +2,19 @@
 <html>
 <head>
 <script src="https://use.fontawesome.com/36e4c5c43f.js"></script>
-<link rel="stylesheet" type="text/css" href="style.css">
+ 	<link rel="stylesheet" type="text/css" href="style.css">
 <style>
+
+.scroll-text {
+  opacity: 0;
+  transform: translateY(50px);  /* Initially, move the text down */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.scroll-text.visible {
+  opacity: 1;
+  transform: translateY(0);  /* Move the text to its normal position */
+}
 .dropbtn {
   background-color:#0B0C40;
   color: white;
@@ -17,7 +28,6 @@
 .dropdown {
   position:relative;
   top:16%;
-  display: inline-block;
   float:right;
   padding:1%;
   
@@ -59,9 +69,9 @@
 	<nav id="navbar">
 		<div class="container" >
 			<ul id="navlist">
-				<li><a href="GetYourBook.html" ><font color="#e09778">HOME </font></a></li>
+				<li><a href="index.html" ><font color="#e09778">HOME </font></a></li>
 				<li><a href="Blogs.html">BLOG   </a></li>
-				<li><a href="E.html" >BUY BOOKS </a></li>
+				<li><a href="Buybooks.html" >BUY BOOKS </a></li>
 				<li><a href="E.html" >SELL YOUR BOOK</a></li>
 				<li><a href="E.html">ABOUT</a></li>
 			</ul>
@@ -76,7 +86,7 @@
 						   <a href="Dystopian.html"> Dystopian</a>
 						   <a href="Adventure.html">Adventure</a>
 						   <a href="Horror.html">Horror</a>
-						   <a href="Books.html">More...</a>
+						   <a href="Buybooks.html">More...</a>
 						   </div>
 					</div>
 	<div class="search-box">
@@ -95,23 +105,40 @@
 	<img src=""></img>
 	<div class="blogBtn"><h1>
 	  Finding Hard To Choose Your Next Book?</h1></div><a class="warpBlog" href="Blogs.html">Refer Blogs & Make It Easier</a></a>
-	  <section id="main"><h3>So... What Is This GetYourBook?</h3>
-	<p>  GetYourBook is a platform for all the book lovers, where you can share your favorite books, purchase second hand book from any person sitting in any part of the world. You have the option to track your book which might be on the hands of one of the million reader who is deskbound miles away from you!</p> 
-<br/>
- This is the perfect place for YOU, and your fellow BOOKWORMS OUT THERE!  	  
-	  </section>
-	<section id="main2"><h3>But How Do I Share My Book?</h3>
-	<p> This is Kinda simple. All you have to do is enter your Home address | E-mail ID | Phone NO. | Facebook/Whatsapp/Messenger Username | If any reader wants your book, the reader will buy the book in your specified price. Just send the book via mail whose expenses is not your burden but the readers. You may recieve the money through your specified mean.
-	</p>
+	<section id="main">
+		<h3 class="scroll-text">So... What Is This GetYourBook?</h3>
+		<p class="scroll-text">  GetYourBook is a platform for all the book lovers, where you can share your favorite books, purchase second hand book from any person sitting in any part of the world. You have the option to track your book which might be on the hands of one of the million reader who is deskbound miles away from you!</p> 
+		
+		<p class="scroll-text">This is the perfect place for YOU, and your fellow BOOKWORMS OUT THERE! </p> 	  
+		</section>
+		<section id="main2"><h3 class="scroll-text">But How Do I Share My Book?</h3>
+		<p class="scroll-text"> This is Kinda simple. All you have to do is enter your Home address | E-mail ID | Phone NO. | Facebook/Whatsapp/Messenger Username | If any reader wants your book, the reader will buy the book in your specified price. Just send the book via mail whose expenses is not your burden but the readers. You may recieve the money through your specified mean.
+		</p>
+		</section>
+		<section id="main3">
+		<h3 class="scroll-text">What is the Need of Blogs?</h3>
+		<p class="scroll-text">Our Team not only help you fellow readers in sharing books, but also helps you in finding you next book. The blog has hundreds of editors who reviews the Best-Of-the-Best books from any category.<br/><br/>Are You a teen who is addicted to Dystopian series such as THE HUNGER GAMES or MAZE RUNNER and don't know what to read next? or An mystry lover and wants to read detective and mystry books? Well the Blogs is the right place for you to explore the vast varieties of books.<br /> <br/><h4>So go ahead and jump into the a New Dimention!</h4></p>	
+		<br/>
+		</div><a class="btn btn3" href="Buybooks.html">GET YOUR FIRST BOOK</a></a>
 	</section>
-	<section id="main3">
-	<h3>What is the Need of Blogs?</h3>
-	<p>Our Team not only help you fellow readers in sharing books, but also helps you in finding you next book. The blog has hundreds of editors who reviews the Best-Of-the-Best books from any category.<br/><br/>Are You a teen who is addicted to Dystopian series such as THE HUNGER GAMES or MAZE RUNNER and don't know what to read next? or An mystry lover and wants to read detective and mystry books? Well the Blogs is the right place for you to explore the vast varieties of books.<br /> <br/><h4>So go ahead and jump into the a New Dimention!</h4></p>	
-	<br/>
-	</div><a class="btn btn3" href="Blogs.html">GET YOUR FIRST BOOK</a></a>
-	</section>
-	<section id="toes"><p>Copyright &copy; 2024 </p></section>
+	<section id="toes"><p>Copyright &copy; 20240474@hyderabad.bits-pilani.ac.in </p></section>
     
+	<script>
+		const observer = new IntersectionObserver((entries, observer) => {
+		  entries.forEach(entry => {
+			if (entry.isIntersecting) {
+			  entry.target.classList.add("visible");
+			  observer.unobserve(entry.target);
+			}
+		  });
+		}, {
+		  threshold: 0.5
+		});
+	
+		const scrollText = document.querySelectorAll('.scroll-text');
+		scrollText.forEach(text => observer.observe(text));
+	  </script>
+	
 	
 </body>
 </html>
