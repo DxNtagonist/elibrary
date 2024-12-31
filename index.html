@@ -7,54 +7,14 @@
 
 .scroll-text {
   opacity: 0;
-  transform: translateY(50px);  /* Initially, move the text down */
+  transform: translateY(50px); 
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .scroll-text.visible {
   opacity: 1;
-  transform: translateY(0);  /* Move the text to its normal position */
+  transform: translateY(0);  
 }
-.dropbtn {
-  background-color:#0B0C40;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  font-weight:500;
-
-}
-
-.dropdown {
-  position:relative;
-  top:16%;
-  float:right;
-  padding:1%;
-  
-  margin-right:3%;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {background-color: #ddd;}
-
-.dropdown:hover .dropdown-content {display: block;}
-
-.dropdown:hover .dropbtn {background-color: #0B0C40;}
 </style>
 </head>
 <body>
@@ -72,8 +32,8 @@
 				<li><a href="index.html" ><font color="#e09778">HOME </font></a></li>
 				<li><a href="Blogs.html">BLOG   </a></li>
 				<li><a href="Buybooks.html" >BUY BOOKS </a></li>
-				<li><a href="E.html" >SELL YOUR BOOK</a></li>
-				<li><a href="E.html">ABOUT</a></li>
+				<li><a href="E.html" >CONTACT US</a></li>
+				<li><a href="About.html">ABOUT</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -95,33 +55,44 @@
 	<i class="fa fa-search"></i>
 		</a>
 	</div>
+
 	<section id="showcase">
 		<div class="middle">
-      <a href="" class="btn btn1">SIGN UP NOW!</a>
-	 <text-align="center"><font color="#2D3436"><b> OR</b> </font>
-	  <a href="" class="btn btn2">LOG IN</a>
+			<a href="" class="btn btn1">SIGN UP NOW!</a>
+			<font color="white"><b> OR</b> </font>
+			<a href="" class="btn btn2">LOG IN</a>
 		</div>
 	</section>
-	<img src=""></img>
-	<div class="blogBtn"><h1>
-	  Finding Hard To Choose Your Next Book?</h1></div><a class="warpBlog" href="Blogs.html">Refer Blogs & Make It Easier</a></a>
+
+
+	<div class="blogBtn">
+		<h1> Finding Hard To Choose Your Next Book?</h1>
+	</div>
+
+	<a class="warpBlog" href="Blogs.html">Refer Blogs & Make It Easier</a>
+
+
+
 	<section id="main">
 		<h3 class="scroll-text">So... What Is This GetYourBook?</h3>
 		<p class="scroll-text">  GetYourBook is a platform for all the book lovers, where you can share your favorite books, purchase second hand book from any person sitting in any part of the world. You have the option to track your book which might be on the hands of one of the million reader who is deskbound miles away from you!</p> 
-		
+
 		<p class="scroll-text">This is the perfect place for YOU, and your fellow BOOKWORMS OUT THERE! </p> 	  
-		</section>
-		<section id="main2"><h3 class="scroll-text">But How Do I Share My Book?</h3>
+	</section>
+	<section id="main2">
+		<h3 class="scroll-text">But How Do I Share My Book?</h3>
 		<p class="scroll-text"> This is Kinda simple. All you have to do is enter your Home address | E-mail ID | Phone NO. | Facebook/Whatsapp/Messenger Username | If any reader wants your book, the reader will buy the book in your specified price. Just send the book via mail whose expenses is not your burden but the readers. You may recieve the money through your specified mean.
 		</p>
-		</section>
-		<section id="main3">
+	</section>
+	<section id="main3">
 		<h3 class="scroll-text">What is the Need of Blogs?</h3>
 		<p class="scroll-text">Our Team not only help you fellow readers in sharing books, but also helps you in finding you next book. The blog has hundreds of editors who reviews the Best-Of-the-Best books from any category.<br/><br/>Are You a teen who is addicted to Dystopian series such as THE HUNGER GAMES or MAZE RUNNER and don't know what to read next? or An mystry lover and wants to read detective and mystry books? Well the Blogs is the right place for you to explore the vast varieties of books.<br /> <br/><h4>So go ahead and jump into the a New Dimention!</h4></p>	
 		<br/>
 		</div><a class="btn btn3" href="Buybooks.html">GET YOUR FIRST BOOK</a></a>
 	</section>
-	<section id="toes"><p>Copyright &copy; 20240474@hyderabad.bits-pilani.ac.in </p></section>
+
+
+	<footer><p>Copyright &copy; 20240474@hyderabad.bits-pilani.ac.in </p></footer>
     
 	<script>
 		const observer = new IntersectionObserver((entries, observer) => {
@@ -132,12 +103,12 @@
 			}
 		  });
 		}, {
-		  threshold: 0.5
+		  threshold: 1
 		});
 	
 		const scrollText = document.querySelectorAll('.scroll-text');
 		scrollText.forEach(text => observer.observe(text));
-	  </script>
+	</script>
 	
 	
 </body>
