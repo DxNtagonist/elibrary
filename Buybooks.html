@@ -1,27 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    
-    
-    <script src="https://use.fontawesome.com/36e4c5c43f.js"></script>
- 	<link rel="stylesheet" type="text/css" href="style.css">
-<style>
-
-    
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://use.fontawesome.com/36e4c5c43f.js"></script>
+  <style>
     a {
       text-decoration: none;
       color: black;
-      
     }
 
     a div {
       width: 150px;
       text-align: center;
-      transition: transform 0.3s ease-in-out; 
+      transition: transform 0.3s ease-in-out;
     }
 
     a div:hover {
-      transform: scale(1.025); 
+      transform: scale(1.025);
     }
 
     a img {
@@ -29,7 +24,7 @@
       height: 200px;
       object-fit: cover;
       border-radius: 10px;
-      transition: transform 0.3s ease-in-out; 
+      transition: transform 0.3s ease-in-out;
     }
 
     a div:hover img {
@@ -39,22 +34,19 @@
     a p {
       margin-top: 10px;
     }
-    
-    .dropbtn {
-      background-color:#0B0C40;
-      color: white;
-      padding: 16px;
-      font-size: 16px;
-      border: none;
-      font-weight:500;
 
+    #book-container {
+      display: flex;
+      overflow-x: auto;
+      gap: 15px;
+      padding: 10px;
     }
-    </style>
-  </head>
-  <body>
-  <header id="mainHeader">
+  </style>
+</head>
+<body>
+	<header id="mainHeader">
 		<div class="container">
-			<h1>GetYourBook.com</h1>
+			<h1><a href="index.html" style="text-decoration: none; color: inherit;">GetYourBook.com</a></h1>
 			
 			<p> An e-library where you can exchange, buy or find the books according to your taste!</p>
 		</div>
@@ -63,114 +55,180 @@
 	<nav id="navbar">
 		<div class="container" >
 			<ul id="navlist">
-				<li><a href="index.html">HOME </a></li>
-				<li><a href="Blogs.html">BLOG </a></li>
-				<li><a href="Buybooks.html" ><font color="#e09778">BUY BOOKS</font></a></li>
+				<li><a href="index.html" ><font color="#e09778">HOME </font></a></li>
+				<li><a href="Blogs.html">BLOG   </a></li>
+				<li><a href="Buybooks.html" >BUY BOOKS </a></li>
 				<li><a href="contact.html" >CONTACT US</a></li>
 				<li><a href="About.html">ABOUT</a></li>
 			</ul>
 		</div>
 	</nav>
-
-    <div class="dropdown">
-        <button class="dropbtn">LIBRARY</button>
-          <div class="dropdown-content"><a href="ShortS.html">Short Stories</a>
-                 <a href="Novels.html">Novels</a>
-           
-              <a href="Sci-fi.html"> Science Fiction </a>
-              <a href="Dystopian.html"> Dystopian</a>
-              <a href="Adventure.html">Adventure</a>
-              <a href="Horror.html">Horror</a>
-              <a href="Buybooks.html">More...</a>
-              </div>
-       </div>
-	
+	<div class="dropdown">
+					 <button class="dropbtn">LIBRARY</button>
+					 <div class="dropdown-content">
+                        <a href="Genres/ShortsS.html">Short Stories</a>
+                        <a href="Genres/SelfHelp.html">Self Help</a>
+                        <a href="Genres/Dystopia.html"> Dystopian</a>
+                        <a href="Genres/Horror.html">Horror</a>
+                        <a href="Genres/Bestselling.html">Bestselling</a>
+                        <a href="Buybooks.html">More...</a>
+                       </div>
+					</div>
 	<div class="search-box">
 	<input  class="search-txt" type="text" name="" placeholder="Search Your Book...">
 	<a class="search-btn" href="#">
-        <i class="fa fa-search"></i>
-    </a>	
+	<i class="fa fa-search"></i>
+		</a>
 	</div>
 
-  <header style="background-color: #0B0C40; color: white; padding:5px 0px; text-align: center;">
-    <h2>EXPLORE BOOK GENRES</h2>
-  </header>
-    <section id="find-books" style="padding: 2rem; background-color: rgb(220, 216, 216);">
-        
-      
-        
-        <div style="margin-bottom: 2rem;">
-          <h3 style="color: #0B0C40;">Short Stories</h3>
-          <div style="display: flex; overflow-x: auto; gap: 15px; padding: 10px;">
-            <a href="https://www.amazon.in/Great-Stories-Children-Ruskin-Bond/dp/8129118920?ref_=Oct_d_omg_d_1318170031_1&pd_rd_w=cZqNI&content-id=amzn1.sym.b97a3d6e-5774-4a93-870a-19a7e2e63776&pf_rd_p=b97a3d6e-5774-4a93-870a-19a7e2e63776&pf_rd_r=19WCCP5N8QJHPQWGR8WX&pd_rd_wg=yXi46&pd_rd_r=59f7719c-59c2-4924-a112-ef1e52ee98d3&pd_rd_i=8129118920" style="text-decoration: none; color: black;">
-              <div style="width: 150px; text-align: center;">
-                <img src="https://m.media-amazon.com/images/I/81BNrA1kNLL._SL1500_.jpg" alt="Ruskin Bond" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
-                <p>Ruskin Bond</p>
-              </div>
-            </a>
-            <a href="https://www.amazon.in/108-Panchatantra-Stories-Illustrated-children/dp/9390292921?ref_=Oct_d_otopr_d_1318170031_1&pd_rd_w=nCmP5&content-id=amzn1.sym.25a1078a-aa23-4746-b8f2-37c5df5524ed&pf_rd_p=25a1078a-aa23-4746-b8f2-37c5df5524ed&pf_rd_r=26J70ZZ4Q35X6B49CDPV&pd_rd_wg=UNiP2&pd_rd_r=46b25dd7-4525-4302-bd7c-d5807dff3623&pd_rd_i=9390292921" style="text-decoration: none; color: black;">
-              <div style="width: 150px; text-align: center;">
-                <img src="https://m.media-amazon.com/images/I/81VJ+MAc7YL._SL1500_.jpg" alt="Short Story 2" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
-                <p>Panchtantra</p>
-              </div>
-            </a>
+  <section id="find-books">
+    <div id="book-sections"></div>
+  </section>
+
+  <footer><p>Copyright &copy; 20240474@hyderabad.bits-pilani.ac.in </p></footer>
+
+
+  <script>
+    
+    const books = [
+      {
+        genre: "Short Stories",
+        items: [
+          {
+            title: "Ruskin Bond",
+            img: "https://m.media-amazon.com/images/I/81BNrA1kNLL._SL1500_.jpg",
+            link: "https://www.amazon.in/Great-Stories-Children-Ruskin-Bond/dp/8129118920",
+          },
+          {
+            title: "Panchtantra",
+            img: "https://m.media-amazon.com/images/I/81VJ+MAc7YL._SL1500_.jpg",
+            link: "https://www.amazon.in/108-Panchatantra-Stories-Illustrated-children/dp/9390292921",
+          },
+          {
+            title: "Explore More",
+            img: "https://icons.iconarchive.com/icons/fa-team/fontawesome/128/FontAwesome-Angle-Right-icon.png",
+            link: "Genres/ShortsS.html",
             
-          </div>
-        </div>
-      
-       
-        <div style="margin-bottom: 2rem;">
-          <h3 style="color: #0B0C40;">Novels</h3>
-          <div style="display: flex; overflow-x: auto; gap: 15px; padding: 10px;">
-            <a href="https://www.amazon.in/Silent-Patient-Alex-Michaelides/dp/1409181634?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=A1WYWER0W24N8S&gQT=1" style="text-decoration: none; color: black;">
-              <div style="width: 150px; text-align: center;">
-                <img src="https://m.media-amazon.com/images/I/81y9uCHoxrL._SL1500_.jpg" alt="The Silent Patient" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
-                <p>The Silent Patient</p>
-              </div>
-            </a>
-            <a href="https://www.amazon.in/That-Night-Friends-Haunting-Secret/dp/0143451871?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=A1WYWER0W24N8S&gQT=1" style="text-decoration: none; color: black;">
-              <div style="width: 150px; text-align: center;">
-                <img src="https://m.media-amazon.com/images/I/81b1PP4RK1L._SL1500_.jpg" alt="That Night: Four Friends, Twenty Years, One Haunting Secret" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
-                <p>That Night: Four Friends, Twenty Years, One Haunting Secret</p>
-              </div>
-            </a>
-           
-          </div>
-        </div>
-
-        <div style="margin-bottom: 10px;">
-          <h3 style="color: #0B0C40;">Self Help Books</h3>
-          <div style="display: flex; overflow-x: auto; gap: 15px; padding: 10px;">
-            <a href="https://www.amazon.in/Atomic-Habits-James-Clear/dp/1847941834/262-2052479-3259806?psc=1" style="text-decoration: none; color: black;">
-              <div style="width: 150px; text-align: center;">
-                <img src="https://m.media-amazon.com/images/I/81F90H7hnML._SL1500_.jpg"  style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
-                <p>Atomic Habits</p>
-              </div>
-            </a>
-            <a href="https://www.amazon.in/Ikigai-H%C3%A9ctor-Garc%C3%ADa/dp/178633089X?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=A1WYWER0W24N8S&gQT=1" style="text-decoration: none; color: black;">
-              <div style="width: 150px; text-align: center;">
-                <img src="https://m.media-amazon.com/images/I/81l3rZK4lnL._SL1500_.jpg"  style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
-                <p>Ikigai</p>
-              </div>
-            </a>
-          </div>
-          <div style="margin-top: 10px;">
-            <a href="#" style="color: #0B0C40;"> 
-              MORE BOOKS COMING SOON
-            </a>
-
-          </div>
+          }
+        ],
+      },
+      {
+        genre: "Bestselling Novels",
+        items: [
+          {
+            title: "The Silent Patient",
+            img: "https://m.media-amazon.com/images/I/81y9uCHoxrL._SL1500_.jpg",
+            link: "https://www.amazon.in/Silent-Patient-Alex-Michaelides/dp/1409181634",
+          },
+          {
+            title: "The Alchemist",
+            img: "https://m.media-amazon.com/images/I/61HAE8zahLL._SL1331_.jpg",
+            link: "https://www.amazon.in/Alchemist-Paulo-Coelho/dp/8172234988",
+          },
+          {
+            title: "Explore More",
+            img: "https://icons.iconarchive.com/icons/fa-team/fontawesome/128/FontAwesome-Angle-Right-icon.png",
+            link: "Genres/Dystopia.html",
             
-           
-          </div>
-        </div>
+          }
+        ],
+      },
+      {
+        genre: "Dystopia",
+        items: [
+          {
+            title: "The Giver",
+            img: "https://m.media-amazon.com/images/I/81Yq5WKWfSL._SL1500_.jpg",
+            link: "https://www.amazon.in/Giver-Quartet-Lois-Lowry/dp/0544336267",
+          },
+          {
+            title: "1987",
+            img: "https://m.media-amazon.com/images/I/61nScdOJ9kL._SL1500_.jpg",
+            link: "https://www.amazon.in/1984-George-Orwell/dp/8192910903",
+          },
+          {
+            title: "Explore More",
+            img: "https://icons.iconarchive.com/icons/fa-team/fontawesome/128/FontAwesome-Angle-Right-icon.png",
+            link: "Genres/Bestselling.html",
+            
+          }
+        ],
+      },
+      {
+        genre: "Horror",
+        items: [
+          {
+            title: "IT",
+            img: "https://m.media-amazon.com/images/I/71ZIovNjw+L._SL1500_.jpg",
+            link: "https://www.amazon.in/Novel-Stephen-King/dp/1501142976",
+          },
+          {
+            title: "Frankenstein",
+            img: "https://m.media-amazon.com/images/I/61rz7oL4cqL._SL1500_.jpg",
+            link: "https://www.amazon.in/Frankenstein-Collins-Classics-Mary-Shelley/dp/0007350961",
+          },
+          {
+            title: "Explore More",
+            img: "https://icons.iconarchive.com/icons/fa-team/fontawesome/128/FontAwesome-Angle-Right-icon.png",
+            link: "Genres/Horror.html",
+          },
+        ],
+      },
+      {
+        genre: "Self Help",
+        items: [
+          {
+            title: "Atomic Habits",
+            img: "https://m.media-amazon.com/images/I/81F90H7hnML._SL1500_.jpg",
+            link: "https://www.amazon.in/Atomic-Habits-James-Clear/dp/1847941834",
+          },
+          {
+            title: "Ikigai",
+            img: "https://m.media-amazon.com/images/I/81l3rZK4lnL._SL1500_.jpg",
+            link: "https://www.amazon.in/Ikigai-H%C3%A9ctor-Garc%C3%ADa/dp/178633089X",
+          },
+          {
+            title: "Explore More",
+            img: "https://icons.iconarchive.com/icons/fa-team/fontawesome/128/FontAwesome-Angle-Right-icon.png",
+            link: "Genres/SelfHelp.html",
+          },
+        ],
+      },
+
       
+    ];
+
+   
+    function renderBooks() {
+      const bookContainer = document.getElementById("book-sections");
+      books.forEach((section) => {
        
-      </section>
+        const sectionDiv = document.createElement("div");
+        sectionDiv.innerHTML = `<h3>${section.genre}</h3>`;
+        
+       
+        const bookRow = document.createElement("div");
+        bookRow.id = "book-container";
 
-      <footer><p>Copyright &copy; 20240474@hyderabad.bits-pilani.ac.in </p></footer>
+        
+        section.items.forEach((book) => {
+          const bookLink = `
+            <a href="${book.link}" target="_blank">
+              <div>
+                <img src="${book.img}" alt="${book.title}">
+                <p>${book.title}</p>
+              </div>
+            </a>`;
+          bookRow.innerHTML += bookLink;
+        });
 
+       
+        sectionDiv.appendChild(bookRow);
+        bookContainer.appendChild(sectionDiv);
+      });
+    }
 
-	
-  </body>
+    renderBooks();
+  </script>
+</body>
 </html>
