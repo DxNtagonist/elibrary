@@ -12,7 +12,7 @@ body {
   border: 3px solid black;
   color: black;
   background: #f7f7f7;
-  text-align: left;
+  text-align: left;         
   width: 40%;
   padding-left: 2%;
   position: relative;
@@ -263,7 +263,7 @@ body {
 
 #mainHeader {
   background-color: #2d3436;
-  text-color: #e09778;
+  color: #e09778;
   text-align: center;
   padding-top: 2px;
   font-size: larger;
@@ -444,3 +444,8 @@ footer {
   .dropdown:hover .dropdown-content {display: block;}
 
   .dropdown:hover .dropbtn {background-color: #0B0C40;}
+
+  
+
+ 
+
